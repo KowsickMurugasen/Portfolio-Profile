@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInRight 1s forwards;
+}
+
+.slide-in-top {
+  animation: slideInTop 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
